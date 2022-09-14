@@ -7,9 +7,17 @@ namespace StackDemo;
     internal class Program
     {
         static void Main(string[] args)
-        {
+        { 
+          
+                Stack<int> liststack= new Stack<int>();
+                liststack.Push(70);  
+                liststack.Push(30);  
+                liststack.Push(56);
 
-        Console.WriteLine("Welcome to stack and Queue program");
+             foreach (int i in liststack)
+             {
+                 Console.Write(i + "->");
+             }
 
 
         }
