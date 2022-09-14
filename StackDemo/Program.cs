@@ -32,6 +32,9 @@ namespace StackDemo;
         //Console.WriteLine("{0} element deleted ",liststack.Pop());
 
         Console.WriteLine("___Queue Operation___");
+        Console.WriteLine();
+
+        Console.WriteLine("___Eequeue operation___");
 
         Queue<int> queue = new Queue<int>();
         queue.Enqueue(56);          
@@ -42,7 +45,14 @@ namespace StackDemo;
         {
             Console.Write(i +"->");
         }
-        
+        Console.WriteLine();
+        Console.WriteLine("___Dequeue operation___");
+        queue.Dequeue();
+        foreach (int i in queue)
+        {
+            Console.Write(i + "->");
+        }
 
-         }
+
+    }
     }
